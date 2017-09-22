@@ -12,3 +12,7 @@ def sum(arr)
     arr.each {|num| total += num}
     return total
 end
+
+def multiply(arr)
+    arr.inject(1){|result, ele| result * ele}
+end
