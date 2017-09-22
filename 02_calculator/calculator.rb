@@ -16,3 +16,7 @@ end
 def multiply(arr)
     arr.inject(1){|result, ele| result * ele}
 end
+
+def power(a, b)
+    a**b
+end
