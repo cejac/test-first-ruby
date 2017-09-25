@@ -20,3 +20,12 @@ end
 def power(a, b)
     a**b
 end
+
+def factorial(num)
+    if num <= 1
+        return 1
+    else
+        (0...num).each{|result, ele| result *= ele}
+    end
+end
+    
