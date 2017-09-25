@@ -18,4 +18,12 @@ end
 def first_word(phrase)
     split = phrase.split(" ")
     first = split[0]
+    first
+end
+
+def titleize(word)
+    title = []
+    split = word.split(" ")
+    split.each {|x|  title.push(x.capitalize!)}
+    title.join(" ")
 end
