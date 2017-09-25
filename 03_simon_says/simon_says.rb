@@ -11,6 +11,6 @@ def repeat(s, times = 2)
     ([s] * times).join(" ")
 end
 
-def start_of_word(word, n = 0)
-    word[0]
+def start_of_word(word, n)
+    word[0...n]
 end
