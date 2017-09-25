@@ -105,7 +105,9 @@ describe "#factorial" do
     expect(factorial(1)).to eq(1)
   end
   
-  it "computes the factorial of 2"
+  it "computes the factorial of 2" do
+    expect(factorial(2)).to eq(2)
+  end 
   it "computes the factorial of 5"
   it "computes the factorial of 10"
 end

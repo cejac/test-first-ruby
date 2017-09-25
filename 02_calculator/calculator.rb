@@ -25,7 +25,7 @@ def factorial(num)
     if num <= 1
         return 1
     else
-        (0...num).each{|result, ele| result *= ele}
+        (1..num).inject{|result, ele| result *= ele}
     end
 end
     
