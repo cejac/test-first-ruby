@@ -12,5 +12,10 @@ def repeat(s, times = 2)
 end
 
 def start_of_word(word, n)
-    word[0...n]
+    word[0...n] #this is crazy!
+end
+
+def first_word(phrase)
+    split = phrase.split(" ")
+    first = split[0]
 end
