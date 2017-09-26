@@ -21,9 +21,25 @@ def first_word(phrase)
     first
 end
 
-def titleize(word)
+def titleize(words)
     title = []
-    split = word.split(" ")
-    split.each {|x|  title.push(x.capitalize!)}
+    split = words.split(" ")
+    split.each { |word| 
+        if word === "and" || word === "over" || word == "the"
+            title.push(word)
+        else
+            title.push(word.capitalize!)
+        end
+    }
+    title[0].capitalize!
     title.join(" ")
+
 end
+
+
+#    title = []
+#    split = word.split(" ")
+#    split.each {|x|  
+#   (the over and).include? x ? title.push(x) : title.push(x.capitalize!)}
+#   title[0].capitalize!
+#   title.join(" ")
