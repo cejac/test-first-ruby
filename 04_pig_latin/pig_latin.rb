@@ -28,3 +28,5 @@ def translate phrase
 
 end
 
+#extremely brute force. Would like to come back and change this into a recursion solution
+#but just trying to get the feel for ruby atm
