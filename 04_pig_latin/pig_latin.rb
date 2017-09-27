@@ -6,6 +6,9 @@ def translate(word)
 
   if vowels.include?(word[0])
    word + 'ay'
+  elsif cons.include?(word[0])
+    word[1..-1] + word[0] + 'ay'
+    
   end
   
 
