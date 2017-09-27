@@ -35,11 +35,3 @@ def titleize(words)
     title.join(" ")
 
 end
-
-
-#    title = []
-#    split = word.split(" ")
-#    split.each {|x|  
-#   (the over and).include? x ? title.push(x) : title.push(x.capitalize!)}
-#   title[0].capitalize!
-#   title.join(" ")
