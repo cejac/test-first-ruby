@@ -8,7 +8,7 @@ class Book
   
   def titleize(bookTitle)
     words = bookTitle.split(" ")
-    words.each {|word| word.capitalize!}
+    words.each {|word| word.capitalize! unless word === 'and'}
     words.join(" ")
   end
   
